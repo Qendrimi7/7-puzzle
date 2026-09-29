@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
 
+ 
 <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
@@ -190,6 +191,7 @@
        ===================================================== */
 
     .hero {
+        margin: 0;
         padding: 88px 0 82px;
         background:
             radial-gradient(
@@ -302,7 +304,7 @@
        ===================================================== */
 
     main {
-        padding: 68px 0 0;
+        padding: 0;
     }
 
     .content {
@@ -330,6 +332,16 @@
         margin: 0 0 28px;
         color: var(--muted);
         font-size: 17px;
+    }
+
+    /* =====================================================
+       ABOUT
+       ===================================================== */
+
+    #about {
+        margin: 0;
+        padding: 68px 0 0;
+        scroll-margin-top: 90px;
     }
 
     /* =====================================================
@@ -381,6 +393,11 @@
     /* =====================================================
        GAMES
        ===================================================== */
+
+    #games {
+        margin: 0;
+        scroll-margin-top: 90px;
+    }
 
     .games-section {
         padding: 60px 0;
@@ -435,7 +452,9 @@
        ===================================================== */
 
     #parents {
+        margin: 0;
         padding: 64px 0 72px;
+        scroll-margin-top: 90px;
     }
 
     .parents {
@@ -575,6 +594,7 @@
         }
 
         .hero {
+            margin: 0;
             padding: 65px 0 60px;
         }
 
@@ -587,6 +607,10 @@
         }
 
         main {
+            padding: 0;
+        }
+
+        #about {
             padding-top: 52px;
         }
 
@@ -596,6 +620,10 @@
 
         .section-intro {
             font-size: 16px;
+        }
+
+        .games-section {
+            padding: 52px 0;
         }
 
         #parents {
@@ -655,6 +683,7 @@
         }
     }
 </style>
+ 
 
 </head>
 
@@ -662,6 +691,7 @@
 
 <header>
 
+ 
 <div class="container nav">
 
     <a
@@ -706,10 +736,13 @@
     </nav>
 
 </div>
+ 
+
 </header>
 
 <main>
 
+ 
 <!-- =====================================================
      HERO
      ===================================================== -->
@@ -860,7 +893,6 @@
     </div>
 
 </section>
-</main>
 
 <!-- =====================================================
      GAMES
@@ -871,118 +903,118 @@
     class="games-section"
 >
 
-<div class="container">
+    <div class="container">
 
-    <div class="content">
+        <div class="content">
 
-        <div
-            class="section"
-            style="margin-bottom: 30px;"
-        >
+            <div
+                class="section"
+                style="margin-bottom: 30px;"
+            >
 
-            <h2 class="section-title">
-                Current game collection
-            </h2>
+                <h2 class="section-title">
+                    Current game collection
+                </h2>
 
-            <p class="section-intro">
-                7 Puzzle currently includes seven games: one free game
-                and six additional games available through the current
-                premium collection.
-            </p>
-
-        </div>
-
-        <div class="game-list">
-
-            <div class="game-item free">
-
-                <strong>
-                    Fruit Basket
-                </strong>
-
-                <span>
-                    Matching and sorting
-                </span>
+                <p class="section-intro">
+                    7 Puzzle currently includes seven games: one free game
+                    and six additional games available through the current
+                    premium collection.
+                </p>
 
             </div>
 
-            <div class="game-item">
+            <div class="game-list">
 
-                <strong>
-                    Rocket Shape Builder
-                </strong>
+                <div class="game-item free">
 
-                <span>
-                    Shapes and building
-                </span>
+                    <strong>
+                        Fruit Basket
+                    </strong>
 
-            </div>
+                    <span>
+                        Matching and sorting
+                    </span>
 
-            <div class="game-item">
+                </div>
 
-                <strong>
-                    Bubble Pop
-                </strong>
+                <div class="game-item">
 
-                <span>
-                    Numbers and interactive play
-                </span>
+                    <strong>
+                        Rocket Shape Builder
+                    </strong>
 
-            </div>
+                    <span>
+                        Shapes and building
+                    </span>
 
-            <div class="game-item">
+                </div>
 
-                <strong>
-                    Lost Treasures
-                </strong>
+                <div class="game-item">
 
-                <span>
-                    Puzzle adventure
-                </span>
+                    <strong>
+                        Bubble Pop
+                    </strong>
 
-            </div>
+                    <span>
+                        Numbers and interactive play
+                    </span>
 
-            <div class="game-item">
+                </div>
 
-                <strong>
-                    Match By Shadows
-                </strong>
+                <div class="game-item">
 
-                <span>
-                    Matching and recognition
-                </span>
+                    <strong>
+                        Lost Treasures
+                    </strong>
 
-            </div>
+                    <span>
+                        Puzzle adventure
+                    </span>
 
-            <div class="game-item">
+                </div>
 
-                <strong>
-                    Animal Memory Game
-                </strong>
+                <div class="game-item">
 
-                <span>
-                    Memory and recognition
-                </span>
+                    <strong>
+                        Match By Shadows
+                    </strong>
 
-            </div>
+                    <span>
+                        Matching and recognition
+                    </span>
 
-            <div class="game-item">
+                </div>
 
-                <strong>
-                    Four Piece Puzzle
-                </strong>
+                <div class="game-item">
 
-                <span>
-                    Visual puzzle
-                </span>
+                    <strong>
+                        Animal Memory Game
+                    </strong>
+
+                    <span>
+                        Memory and recognition
+                    </span>
+
+                </div>
+
+                <div class="game-item">
+
+                    <strong>
+                        Four Piece Puzzle
+                    </strong>
+
+                    <span>
+                        Visual puzzle
+                    </span>
+
+                </div>
 
             </div>
 
         </div>
 
     </div>
-
-</div>
 
 </section>
 
@@ -992,38 +1024,40 @@
 
 <section id="parents">
 
-<div class="container">
+    <div class="container">
 
-    <div class="content">
+        <div class="content">
 
-        <div class="parents">
+            <div class="parents">
 
-            <h2>
-                For Parents
-            </h2>
+                <h2>
+                    For Parents
+                </h2>
 
-            <p>
-                Parents should have clear information about the
-                experience their children use. Learn more about
-                privacy, purchases, and the terms that apply to
-                7 Puzzle.
-            </p>
+                <p>
+                    Parents should have clear information about the
+                    experience their children use. Learn more about
+                    privacy, purchases, and the terms that apply to
+                    7 Puzzle.
+                </p>
 
-            <div class="links">
+                <div class="links">
 
-                <a
-                    class="secondary-button"
-                    href="privacy-policy.html"
-                >
-                    Privacy Policy
-                </a>
+                    <a
+                        class="secondary-button"
+                        href="privacy-policy.html"
+                    >
+                        Privacy Policy
+                    </a>
 
-                <a
-                    class="secondary-button"
-                    href="terms-of-use.html"
-                >
-                    Terms of Use
-                </a>
+                    <a
+                        class="secondary-button"
+                        href="terms-of-use.html"
+                    >
+                        Terms of Use
+                    </a>
+
+                </div>
 
             </div>
 
@@ -1031,8 +1065,10 @@
 
     </div>
 
-</div>
 </section>
+ 
+
+</main>
 
 <!-- =====================================================
      FOOTER
@@ -1040,6 +1076,7 @@
 
 <footer>
 
+ 
 <div class="container footer-content">
 
     <div>
@@ -1079,6 +1116,8 @@
     </div>
 
 </div>
+ 
+
 </footer>
 
 </body>
