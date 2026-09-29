@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
 <title>7 Puzzle — Terms of Use</title>
+
 <meta name="description" content="Terms of Use for 7 Puzzle, a collection of playful puzzle games designed for children and families.">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#0756D8">
@@ -21,10 +24,9 @@
         --deep-blue: #043691;
         --yellow: #FFD21A;
         --light-blue: #CDE7FF;
-        --sky-blue: #6ABFFF;
+        --white: #FFFFFF;
         --text: #17324D;
         --muted: #60758A;
-        --white: #FFFFFF;
         --background: #F7FBFF;
         --border: #DCEBFA;
     }
@@ -65,7 +67,7 @@
     }
 
     a:focus-visible {
-        outline: 3px solid var(--sky-blue);
+        outline: 3px solid var(--yellow);
         outline-offset: 3px;
         border-radius: 4px;
     }
@@ -190,7 +192,7 @@
     }
 
     .hero p {
-        max-width: 700px;
+        max-width: 720px;
         margin: 20px auto 0;
         color: var(--muted);
         font-size: 18px;
@@ -216,26 +218,47 @@
         margin: 0 auto;
     }
 
-    .intro-card {
-        padding: 28px 30px;
-        margin-bottom: 34px;
+    .policy {
+        padding: 42px 46px;
         background: var(--white);
         border: 1px solid var(--border);
-        border-radius: 18px;
+        border-radius: 20px;
         box-shadow: 0 8px 30px rgba(4, 54, 145, 0.05);
     }
 
-    .intro-card p {
-        margin: 0;
-        font-size: 16px;
+    .intro-card {
+        padding: 24px 26px;
+        margin-bottom: 30px;
+        background: #F4F9FF;
+        border: 1px solid var(--border);
+        border-radius: 16px;
     }
 
-    section {
+    .intro-card p {
+        margin: 0 0 12px;
+    }
+
+    .intro-card p:last-child {
+        margin-bottom: 0;
+    }
+
+    /*
+     IMPORTANT:
+     Do not use a global "section" selector here because
+     .hero is also a <section>. The previous global selector
+     added unwanted top space above the hero.
+    */
+
+    .policy > section {
         margin-top: 42px;
         scroll-margin-top: 96px;
     }
 
-    section h2 {
+    .policy > section:first-of-type {
+        margin-top: 0;
+    }
+
+    .policy > section h2 {
         margin: 0 0 14px;
         color: var(--deep-blue);
         font-size: 26px;
@@ -243,25 +266,25 @@
         letter-spacing: -0.5px;
     }
 
-    section h3 {
+    .policy > section h3 {
         margin: 24px 0 8px;
         color: var(--deep-blue);
         font-size: 19px;
         line-height: 1.35;
     }
 
-    section p {
+    .policy > section p {
         margin: 0 0 14px;
         font-size: 16px;
     }
 
-    section ul,
-    section ol {
+    .policy > section ul,
+    .policy > section ol {
         margin: 10px 0 18px;
         padding-left: 25px;
     }
 
-    section li {
+    .policy > section li {
         margin: 7px 0;
         padding-left: 3px;
     }
@@ -286,7 +309,7 @@
     }
 
     .highlight {
-        padding: 22px 24px;
+        padding: 20px 22px;
         margin: 20px 0;
         background: #F4F9FF;
         border-left: 4px solid var(--cobalt);
@@ -295,6 +318,10 @@
 
     .highlight p:last-child {
         margin-bottom: 0;
+    }
+
+    .highlight strong {
+        color: var(--deep-blue);
     }
 
     .legal-note {
@@ -310,11 +337,11 @@
     }
 
     .contact-card {
-        margin-top: 46px;
-        padding: 30px;
+        margin-top: 42px;
+        padding: 28px 30px;
         background: var(--deep-blue);
         color: var(--white);
-        border-radius: 20px;
+        border-radius: 18px;
     }
 
     .contact-card h2 {
@@ -372,7 +399,7 @@
        RESPONSIVE
        ===================================================== */
 
-    @media (max-width: 720px) {
+    @media (max-width: 760px) {
         .container {
             width: min(100% - 28px, 1080px);
         }
@@ -410,20 +437,21 @@
             padding: 42px 0 60px;
         }
 
-        .intro-card {
-            padding: 22px;
+        .policy {
+            padding: 28px 22px;
+            border-radius: 18px;
         }
 
-        section {
+        .policy > section {
             margin-top: 34px;
         }
 
-        section h2 {
+        .policy > section h2 {
             font-size: 23px;
         }
 
-        section p,
-        section li {
+        .policy > section p,
+        .policy > section li {
             font-size: 15px;
         }
 
@@ -499,468 +527,472 @@
     <div class="container content">
 
  
-    <div class="intro-card">
-        <p>
-            These Terms of Use ("Terms") govern your access to and use
-            of 7 Puzzle ("7 Puzzle", "the App", "we", "us", or "our").
-            By downloading, accessing, or using 7 Puzzle, you agree to
-            these Terms to the extent permitted by applicable law.
-            If a parent or legal guardian permits a child to use the
-            App, the parent or legal guardian is responsible for the
-            child's use of the App and agrees to these Terms on behalf
-            of themselves and the child, to the extent permitted by
-            applicable law.
-        </p>
-    </div>
+    <article class="policy">
 
-    <!-- =====================================================
-         1. ABOUT 7 PUZZLE
-         ===================================================== -->
-
-    <section>
-        <h2>1. About 7 Puzzle</h2>
-
-        <p>
-            7 Puzzle is a collection of playful puzzle games designed
-            primarily for children and families. The App includes games
-            focused on matching, memory, shapes, numbers, dragging,
-            arranging, and visual problem solving.
-        </p>
-
-        <p>
-            The current collection includes:
-        </p>
-
-        <ul class="game-list">
-            <li>Fruit Basket</li>
-            <li>Rocket Shape Builder</li>
-            <li>Bubble Pop</li>
-            <li>Lost Treasures</li>
-            <li>Match By Shadows</li>
-            <li>Animal Memory Game</li>
-            <li>Four Piece Puzzle</li>
-        </ul>
-
-        <p>
-            The App currently includes one free game and six premium
-            games available through the applicable in-app purchase.
-            Availability may vary based on the version of the App and
-            the applicable App Store offering.
-        </p>
-    </section>
-
-    <!-- =====================================================
-         2. ELIGIBILITY AND CHILDREN'S USE
-         ===================================================== -->
-
-    <section>
-        <h2>2. Eligibility and Children's Use</h2>
-
-        <p>
-            7 Puzzle is designed primarily for children and families.
-            The App does not require a child to create an account or
-            provide personal information for ordinary gameplay.
-        </p>
-
-        <p>
-            Users must use the App in accordance with applicable laws.
-            Parents and legal guardians are responsible for determining
-            whether the App is appropriate for their child and for
-            supervising use, managing device settings, and managing
-            purchases where appropriate.
-        </p>
-
-        <p>
-            Parents and legal guardians may use Apple's available
-            parental and purchase controls where appropriate, including
-            features such as Screen Time and Ask to Buy.
-        </p>
-    </section>
-
-    <!-- =====================================================
-         3. LICENSE
-         ===================================================== -->
-
-    <section>
-        <h2>3. License</h2>
-
-        <p>
-            Subject to these Terms, we grant you a limited,
-            non-exclusive, non-transferable, revocable license to
-            download, install, and use 7 Puzzle for personal,
-            non-commercial purposes on Apple devices that you own or
-            control.
-        </p>
-
-        <p>
-            This license does not transfer ownership of the App or any
-            intellectual property rights to you.
-        </p>
-
-        <p>
-            Any rights not expressly granted under these Terms are
-            reserved by us and our licensors.
-        </p>
-    </section>
-
-    <!-- =====================================================
-         4. OWNERSHIP AND INTELLECTUAL PROPERTY
-         ===================================================== -->
-
-    <section>
-        <h2>4. Ownership and Intellectual Property</h2>
-
-        <p>
-            7 Puzzle and its software, visual design, graphics,
-            illustrations, animations, sounds, game implementations,
-            logos, names, and other content are owned by us or our
-            licensors and are protected by applicable intellectual
-            property laws.
-        </p>
-
-        <p>
-            Except as expressly permitted by these Terms or applicable
-            law, you may not:
-        </p>
-
-        <ul>
-            <li>Copy or reproduce the App or its content.</li>
-            <li>Modify or create derivative works from the App.</li>
-            <li>Distribute, sell, rent, lease, or sublicense the App.</li>
-            <li>Attempt to reverse engineer or extract source code.</li>
-            <li>Remove copyright, trademark, or other proprietary notices.</li>
-            <li>Use the App or its content for unauthorized commercial purposes.</li>
-        </ul>
-
-        <p>
-            Nothing in these Terms limits rights that cannot legally
-            be restricted under applicable law.
-        </p>
-    </section>
-
-    <!-- =====================================================
-         5. IN-APP PURCHASES
-         ===================================================== -->
-
-    <section>
-        <h2>5. In-App Purchases</h2>
-
-        <p>
-            7 Puzzle offers a one-time, non-consumable in-app purchase
-            that unlocks the six premium games included in the current
-            collection, as identified in the App Store listing and
-            purchase interface.
-        </p>
-
-        <div class="highlight">
+        <div class="intro-card">
             <p>
-                <strong>Important:</strong> The purchase applies only
-                to the premium games included in the current collection
-                at the time of purchase. Future games or additional
-                content may be offered as separate purchases and are
-                not automatically included unless expressly stated.
+                These Terms of Use ("Terms") govern your access to and use
+                of 7 Puzzle ("7 Puzzle", "the App", "we", "us", or "our").
+                By downloading, accessing, or using 7 Puzzle, you agree to
+                these Terms to the extent permitted by applicable law.
+                If a parent or legal guardian permits a child to use the
+                App, the parent or legal guardian is responsible for the
+                child's use of the App and agrees to these Terms on behalf
+                of themselves and the child, to the extent permitted by
+                applicable law.
             </p>
         </div>
 
-        <p>
-            Purchases are processed through Apple's App Store and
-            StoreKit. Apple handles the payment transaction and
-            associated payment information. We do not receive or store
-            your payment card or bank account credentials.
-        </p>
+        <!-- =====================================================
+             1. ABOUT 7 PUZZLE
+             ===================================================== -->
 
-        <p>
-            Apple's applicable terms, conditions, and policies may also
-            apply to purchases made through the App Store.
-        </p>
-    </section>
+        <section>
+            <h2>1. About 7 Puzzle</h2>
 
-    <!-- =====================================================
-         6. RESTORE PURCHASES
-         ===================================================== -->
+            <p>
+                7 Puzzle is a collection of playful puzzle games designed
+                primarily for children and families. The App includes games
+                focused on matching, memory, shapes, numbers, dragging,
+                arranging, and visual problem solving.
+            </p>
 
-    <section>
-        <h2>6. Restore Purchases</h2>
+            <p>
+                The current collection includes:
+            </p>
 
-        <p>
-            The App provides a "Restore Purchases" feature that allows
-            eligible previously purchased content to be restored through
-            Apple's App Store and StoreKit.
-        </p>
+            <ul class="game-list">
+                <li>Fruit Basket</li>
+                <li>Rocket Shape Builder</li>
+                <li>Bubble Pop</li>
+                <li>Lost Treasures</li>
+                <li>Match By Shadows</li>
+                <li>Animal Memory Game</li>
+                <li>Four Piece Puzzle</li>
+            </ul>
 
-        <p>
-            Restoring purchases may depend on the Apple Account and
-            transaction information associated with the original
-            purchase. Apple may require authentication or other
-            verification before previously purchased content can be
-            restored.
-        </p>
-    </section>
+            <p>
+                The App currently includes one free game and six premium
+                games available through the applicable in-app purchase.
+                Availability may vary based on the version of the App and
+                the applicable App Store offering.
+            </p>
+        </section>
 
-    <!-- =====================================================
-         7. UPDATES AND CHANGES
-         ===================================================== -->
+        <!-- =====================================================
+             2. ELIGIBILITY AND CHILDREN'S USE
+             ===================================================== -->
 
-    <section>
-        <h2>7. Updates and Changes</h2>
+        <section>
+            <h2>2. Eligibility and Children's Use</h2>
 
-        <p>
-            We may update 7 Puzzle from time to time to fix bugs,
-            improve performance, improve accessibility, maintain
-            compatibility with operating systems and devices, improve
-            security, or add, modify, or remove games, features, and
-            content.
-        </p>
+            <p>
+                7 Puzzle is designed primarily for children and families.
+                The App does not require a child to create an account or
+                provide personal information for ordinary gameplay.
+            </p>
 
-        <p>
-            Where required by applicable law or Apple's rules, material
-            changes affecting paid functionality will be handled in
-            accordance with those requirements.
-        </p>
-    </section>
+            <p>
+                Users must use the App in accordance with applicable laws.
+                Parents and legal guardians are responsible for determining
+                whether the App is appropriate for their child and for
+                supervising use, managing device settings, and managing
+                purchases where appropriate.
+            </p>
 
-    <!-- =====================================================
-         8. AVAILABILITY
-         ===================================================== -->
+            <p>
+                Parents and legal guardians may use Apple's available
+                parental and purchase controls where appropriate, including
+                features such as Screen Time and Ask to Buy.
+            </p>
+        </section>
 
-    <section>
-        <h2>8. Availability</h2>
+        <!-- =====================================================
+             3. LICENSE
+             ===================================================== -->
 
-        <p>
-            We aim to keep 7 Puzzle and its games available and
-            functional, but we do not guarantee that every game,
-            feature, or piece of content will always remain available.
-        </p>
+        <section>
+            <h2>3. License</h2>
 
-        <p>
-            We may modify, replace, suspend, or discontinue features,
-            games, or portions of the App when reasonably necessary for
-            technical, legal, security, platform, or other legitimate
-            reasons.
-        </p>
-    </section>
+            <p>
+                Subject to these Terms, we grant you a limited,
+                non-exclusive, non-transferable, revocable license to
+                download, install, and use 7 Puzzle for personal,
+                non-commercial purposes on Apple devices that you own or
+                control.
+            </p>
 
-    <!-- =====================================================
-         9. ACCEPTABLE USE
-         ===================================================== -->
+            <p>
+                This license does not transfer ownership of the App or any
+                intellectual property rights to you.
+            </p>
 
-    <section>
-        <h2>9. Acceptable Use</h2>
+            <p>
+                Any rights not expressly granted under these Terms are
+                reserved by us and our licensors.
+            </p>
+        </section>
 
-        <p>
-            You agree to use 7 Puzzle only for lawful purposes and in
-            accordance with these Terms.
-        </p>
+        <!-- =====================================================
+             4. OWNERSHIP AND INTELLECTUAL PROPERTY
+             ===================================================== -->
 
-        <p>
-            You may not:
-        </p>
+        <section>
+            <h2>4. Ownership and Intellectual Property</h2>
 
-        <ul>
-            <li>
-                Attempt to bypass or circumvent Apple's purchase
-                mechanisms.
-            </li>
-            <li>
-                Obtain paid content through unauthorized means.
-            </li>
-            <li>
-                Interfere with the security or operation of the App.
-            </li>
-            <li>
-                Introduce malicious code or attempt unauthorized access.
-            </li>
-            <li>
-                Exploit the App or its content for unauthorized
-                commercial purposes.
-            </li>
-        </ul>
-    </section>
+            <p>
+                7 Puzzle and its software, visual design, graphics,
+                illustrations, animations, sounds, game implementations,
+                logos, names, and other content are owned by us or our
+                licensors and are protected by applicable intellectual
+                property laws.
+            </p>
 
-    <!-- =====================================================
-         10. THIRD-PARTY PLATFORMS
-         ===================================================== -->
+            <p>
+                Except as expressly permitted by these Terms or applicable
+                law, you may not:
+            </p>
 
-    <section>
-        <h2>10. Third-Party Platforms</h2>
+            <ul>
+                <li>Copy or reproduce the App or its content.</li>
+                <li>Modify or create derivative works from the App.</li>
+                <li>Distribute, sell, rent, lease, or sublicense the App.</li>
+                <li>Attempt to reverse engineer or extract source code.</li>
+                <li>Remove copyright, trademark, or other proprietary notices.</li>
+                <li>Use the App or its content for unauthorized commercial purposes.</li>
+            </ul>
 
-        <p>
-            7 Puzzle is distributed through Apple's App Store and uses
-            Apple services such as StoreKit for in-app purchases.
-        </p>
+            <p>
+                Nothing in these Terms limits rights that cannot legally
+                be restricted under applicable law.
+            </p>
+        </section>
 
-        <p>
-            Apple's applicable terms, policies, and conditions may
-            apply to your use of Apple services and the App Store.
-        </p>
+        <!-- =====================================================
+             5. IN-APP PURCHASES
+             ===================================================== -->
 
-        <p>
-            Apple is responsible for the App Store infrastructure and
-            payment processing associated with purchases made through
-            the App Store.
-        </p>
-    </section>
+        <section>
+            <h2>5. In-App Purchases</h2>
 
-    <!-- =====================================================
-         11. DISCLAIMERS
-         ===================================================== -->
+            <p>
+                7 Puzzle offers a one-time, non-consumable in-app purchase
+                that unlocks the six premium games included in the current
+                collection, as identified in the App Store listing and
+                purchase interface.
+            </p>
 
-    <section>
-        <h2>11. Disclaimers</h2>
+            <div class="highlight">
+                <p>
+                    <strong>Important:</strong> The purchase applies only
+                    to the premium games included in the current collection
+                    at the time of purchase. Future games or additional
+                    content may be offered as separate purchases and are
+                    not automatically included unless expressly stated.
+                </p>
+            </div>
 
-        <p>
-            To the maximum extent permitted by applicable law,
-            7 Puzzle is provided on an "as available" and "as is" basis.
-        </p>
+            <p>
+                Purchases are processed through Apple's App Store and
+                StoreKit. Apple handles the payment transaction and
+                associated payment information. We do not receive or store
+                your payment card or bank account credentials.
+            </p>
 
-        <p>
-            We do not guarantee that the App will always be available,
-            uninterrupted, error-free, secure, compatible with every
-            device or operating system, or remain unchanged.
-        </p>
+            <p>
+                Apple's applicable terms, conditions, and policies may also
+                apply to purchases made through the App Store.
+            </p>
+        </section>
 
-        <p>
-            Nothing in these Terms excludes or limits consumer rights
-            or protections that cannot legally be excluded or limited.
-        </p>
-    </section>
+        <!-- =====================================================
+             6. RESTORE PURCHASES
+             ===================================================== -->
 
-    <!-- =====================================================
-         12. LIMITATION OF LIABILITY
-         ===================================================== -->
+        <section>
+            <h2>6. Restore Purchases</h2>
 
-    <section>
-        <h2>12. Limitation of Liability</h2>
+            <p>
+                The App provides a "Restore Purchases" feature that allows
+                eligible previously purchased content to be restored through
+                Apple's App Store and StoreKit.
+            </p>
 
-        <p>
-            To the maximum extent permitted by applicable law, we will
-            not be liable for indirect, incidental, special,
-            consequential, or similar damages arising from or related
-            to your use of 7 Puzzle.
-        </p>
+            <p>
+                Restoring purchases may depend on the Apple Account and
+                transaction information associated with the original
+                purchase. Apple may require authentication or other
+                verification before previously purchased content can be
+                restored.
+            </p>
+        </section>
 
-        <p>
-            Nothing in these Terms limits liability or rights that
-            cannot legally be limited or excluded under applicable law.
-        </p>
-    </section>
+        <!-- =====================================================
+             7. UPDATES AND CHANGES
+             ===================================================== -->
 
-    <!-- =====================================================
-         13. CHILDREN'S PRIVACY
-         ===================================================== -->
+        <section>
+            <h2>7. Updates and Changes</h2>
 
-    <section>
-        <h2>13. Children's Privacy</h2>
+            <p>
+                We may update 7 Puzzle from time to time to fix bugs,
+                improve performance, improve accessibility, maintain
+                compatibility with operating systems and devices, improve
+                security, or add, modify, or remove games, features, and
+                content.
+            </p>
 
-        <p>
-            7 Puzzle is designed with children and families in mind.
-            The App does not require an account or personal information
-            for ordinary gameplay.
-        </p>
+            <p>
+                Where required by applicable law or Apple's rules, material
+                changes affecting paid functionality will be handled in
+                accordance with those requirements.
+            </p>
+        </section>
 
-        <p>
-            Our practices regarding information are described in our
-            <a href="privacy-policy.html">Privacy Policy</a>.
-        </p>
-    </section>
+        <!-- =====================================================
+             8. AVAILABILITY
+             ===================================================== -->
 
-    <!-- =====================================================
-         14. TERMINATION
-         ===================================================== -->
+        <section>
+            <h2>8. Availability</h2>
 
-    <section>
-        <h2>14. Termination</h2>
+            <p>
+                We aim to keep 7 Puzzle and its games available and
+                functional, but we do not guarantee that every game,
+                feature, or piece of content will always remain available.
+            </p>
 
-        <p>
-            These Terms remain in effect until terminated.
-            You may terminate your use of 7 Puzzle at any time by
-            deleting the App from your device.
-        </p>
+            <p>
+                We may modify, replace, suspend, or discontinue features,
+                games, or portions of the App when reasonably necessary for
+                technical, legal, security, platform, or other legitimate
+                reasons.
+            </p>
+        </section>
 
-        <p>
-            We may suspend or discontinue the App or access to portions
-            of it where reasonably necessary for legal, security,
-            technical, platform, or other legitimate reasons.
-        </p>
+        <!-- =====================================================
+             9. ACCEPTABLE USE
+             ===================================================== -->
 
-        <p>
-            Provisions that by their nature should survive termination,
-            including provisions relating to intellectual property,
-            disclaimers, limitations of liability, and governing law,
-            will survive termination to the extent permitted by law.
-        </p>
-    </section>
+        <section>
+            <h2>9. Acceptable Use</h2>
 
-    <!-- =====================================================
-         15. CHANGES TO THESE TERMS
-         ===================================================== -->
+            <p>
+                You agree to use 7 Puzzle only for lawful purposes and in
+                accordance with these Terms.
+            </p>
 
-    <section>
-        <h2>15. Changes to These Terms</h2>
+            <p>
+                You may not:
+            </p>
 
-        <p>
-            We may update these Terms from time to time. When we make
-            changes, we will update the Effective Date shown at the
-            beginning of the Terms.
-        </p>
+            <ul>
+                <li>
+                    Attempt to bypass or circumvent Apple's purchase
+                    mechanisms.
+                </li>
+                <li>
+                    Obtain paid content through unauthorized means.
+                </li>
+                <li>
+                    Interfere with the security or operation of the App.
+                </li>
+                <li>
+                    Introduce malicious code or attempt unauthorized access.
+                </li>
+                <li>
+                    Exploit the App or its content for unauthorized
+                    commercial purposes.
+                </li>
+            </ul>
+        </section>
 
-        <p>
-            Your continued use of 7 Puzzle after an updated version
-            becomes effective constitutes acceptance of the updated
-            Terms to the extent permitted by applicable law.
-        </p>
-    </section>
+        <!-- =====================================================
+             10. THIRD-PARTY PLATFORMS
+             ===================================================== -->
 
-    <!-- =====================================================
-         16. GOVERNING LAW
-         ===================================================== -->
+        <section>
+            <h2>10. Third-Party Platforms</h2>
 
-    <section>
-        <h2>16. Governing Law</h2>
+            <p>
+                7 Puzzle is distributed through Apple's App Store and uses
+                Apple services such as StoreKit for in-app purchases.
+            </p>
 
-        <p>
-            These Terms shall be governed by and interpreted in
-            accordance with the applicable laws governing the
-            relationship between you and the developer, without
-            prejudice to any mandatory consumer protections that may
-            apply to you.
-        </p>
+            <p>
+                Apple's applicable terms, policies, and conditions may
+                apply to your use of Apple services and the App Store.
+            </p>
 
-        <p>
-            Any disputes arising out of or relating to these Terms or
-            the use of 7 Puzzle shall be handled in accordance with
-            applicable law and any mandatory procedures or rights that
-            apply to the parties.
-        </p>
+            <p>
+                Apple is responsible for the App Store infrastructure and
+                payment processing associated with purchases made through
+                the App Store.
+            </p>
+        </section>
 
-        <div class="legal-note">
-            <strong>Consumer rights:</strong>
-            Nothing in these Terms is intended to limit or exclude any
-            mandatory consumer rights or protections that may apply to
-            you under applicable law.
-        </div>
-    </section>
+        <!-- =====================================================
+             11. DISCLAIMERS
+             ===================================================== -->
 
-    <!-- =====================================================
-         17. CONTACT
-         ===================================================== -->
+        <section>
+            <h2>11. Disclaimers</h2>
 
-    <section class="contact-card">
-        <h2>17. Contact</h2>
+            <p>
+                To the maximum extent permitted by applicable law,
+                7 Puzzle is provided on an "as available" and "as is" basis.
+            </p>
 
-        <p>
-            If you have questions about these Terms of Use or 7 Puzzle,
-            you can contact us at:
-        </p>
+            <p>
+                We do not guarantee that the App will always be available,
+                uninterrupted, error-free, secure, compatible with every
+                device or operating system, or remain unchanged.
+            </p>
 
-        <p>
-            <strong>Developer:</strong> Qendrim Mjeku<br>
-            <strong>Email / Support:</strong>
-            <a href="mailto:qendrimiiosdev@gmail.com">
-                qendrimiiosdev@gmail.com
-            </a>
-        </p>
-    </section>
+            <p>
+                Nothing in these Terms excludes or limits consumer rights
+                or protections that cannot legally be excluded or limited.
+            </p>
+        </section>
+
+        <!-- =====================================================
+             12. LIMITATION OF LIABILITY
+             ===================================================== -->
+
+        <section>
+            <h2>12. Limitation of Liability</h2>
+
+            <p>
+                To the maximum extent permitted by applicable law, we will
+                not be liable for indirect, incidental, special,
+                consequential, or similar damages arising from or related
+                to your use of 7 Puzzle.
+            </p>
+
+            <p>
+                Nothing in these Terms limits liability or rights that
+                cannot legally be limited or excluded under applicable law.
+            </p>
+        </section>
+
+        <!-- =====================================================
+             13. CHILDREN'S PRIVACY
+             ===================================================== -->
+
+        <section>
+            <h2>13. Children's Privacy</h2>
+
+            <p>
+                7 Puzzle is designed with children and families in mind.
+                The App does not require an account or personal information
+                for ordinary gameplay.
+            </p>
+
+            <p>
+                Our practices regarding information are described in our
+                <a href="privacy-policy.html">Privacy Policy</a>.
+            </p>
+        </section>
+
+        <!-- =====================================================
+             14. TERMINATION
+             ===================================================== -->
+
+        <section>
+            <h2>14. Termination</h2>
+
+            <p>
+                These Terms remain in effect until terminated.
+                You may terminate your use of 7 Puzzle at any time by
+                deleting the App from your device.
+            </p>
+
+            <p>
+                We may suspend or discontinue the App or access to portions
+                of it where reasonably necessary for legal, security,
+                technical, platform, or other legitimate reasons.
+            </p>
+
+            <p>
+                Provisions that by their nature should survive termination,
+                including provisions relating to intellectual property,
+                disclaimers, limitations of liability, and governing law,
+                will survive termination to the extent permitted by law.
+            </p>
+        </section>
+
+        <!-- =====================================================
+             15. CHANGES TO THESE TERMS
+             ===================================================== -->
+
+        <section>
+            <h2>15. Changes to These Terms</h2>
+
+            <p>
+                We may update these Terms from time to time. When we make
+                changes, we will update the Effective Date shown at the
+                beginning of the Terms.
+            </p>
+
+            <p>
+                Your continued use of 7 Puzzle after an updated version
+                becomes effective constitutes acceptance of the updated
+                Terms to the extent permitted by applicable law.
+            </p>
+        </section>
+
+        <!-- =====================================================
+             16. GOVERNING LAW
+             ===================================================== -->
+
+        <section>
+            <h2>16. Governing Law</h2>
+
+            <p>
+                These Terms shall be governed by and interpreted in
+                accordance with the applicable laws governing the
+                relationship between you and the developer, without
+                prejudice to any mandatory consumer protections that may
+                apply to you.
+            </p>
+
+            <p>
+                Any disputes arising out of or relating to these Terms or
+                the use of 7 Puzzle shall be handled in accordance with
+                applicable law and any mandatory procedures or rights that
+                apply to the parties.
+            </p>
+
+            <div class="legal-note">
+                <strong>Consumer rights:</strong>
+                Nothing in these Terms is intended to limit or exclude any
+                mandatory consumer rights or protections that may apply to
+                you under applicable law.
+            </div>
+        </section>
+
+        <!-- =====================================================
+             17. CONTACT
+             ===================================================== -->
+
+        <section class="contact-card">
+            <h2>17. Contact</h2>
+
+            <p>
+                If you have questions about these Terms of Use or 7 Puzzle,
+                you can contact us at:
+            </p>
+
+            <p>
+                <strong>Developer:</strong> Qendrim Mjeku<br>
+                <strong>Email / Support:</strong>
+                <a href="mailto:qendrimiiosdev@gmail.com">
+                    qendrimiiosdev@gmail.com
+                </a>
+            </p>
+        </section>
+
+    </article>
 
 </div>
  
@@ -973,7 +1005,7 @@
  
     <div>
         <div class="footer-brand">7 Puzzle</div>
-        <div>Fun • Play • Learn</div>
+        <div>Fun • Play • Explore</div>
     </div>
 
     <div class="footer-links">
