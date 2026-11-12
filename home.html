@@ -448,6 +448,51 @@
         letter-spacing: 0.04em;
     }
 
+
+    /* =====================================================
+       HOW THE APP WORKS
+       ===================================================== */
+
+    #how-it-works {
+        padding: 64px 0;
+        scroll-margin-top: 90px;
+    }
+
+    .app-demo {
+        overflow: hidden;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: var(--white);
+        box-shadow: 0 8px 28px rgba(4, 54, 145, 0.07);
+    }
+
+    .app-demo-video {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        background: #071A35;
+        object-fit: contain;
+    }
+
+    .app-demo-caption {
+        padding: 22px 26px 25px;
+    }
+
+    .app-demo-caption h3 {
+        margin: 0 0 7px;
+        color: var(--deep-blue);
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .app-demo-caption p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
     /* =====================================================
        PARENTS
        ===================================================== */
@@ -719,6 +764,10 @@
 
     <a href="#games">
         Games
+    </a>
+
+    <a href="#how-it-works">
+        How It Works
     </a>
 
     <a href="#parents">
@@ -1020,6 +1069,68 @@
 
 </div>
  
+
+</section>
+
+<!-- =====================================================
+     HOW THE APP WORKS
+     ===================================================== -->
+
+<section id="how-it-works">
+
+    <div class="container">
+
+        <div class="content">
+
+            <div class="section" style="margin-bottom: 28px;">
+
+                <h2 class="section-title">
+                    How the App Works
+                </h2>
+
+                <p class="section-intro">
+                    Take a look at 7 Puzzle in action and discover
+                    how children can explore the games and enjoy
+                    simple, interactive puzzle challenges.
+                </p>
+
+            </div>
+
+            <div class="app-demo">
+
+                <video
+                    class="app-demo-video"
+                    controls
+                    playsinline
+                    preload="metadata"
+                    aria-label="7 Puzzle app demonstration video"
+                >
+                    <source
+                        src="videos/7-puzzle-demo.mov"
+                        type="video/quicktime"
+                    >
+                    Your browser does not support the video tag.
+                </video>
+
+                <div class="app-demo-caption">
+
+                    <h3>
+                        See 7 Puzzle in action
+                    </h3>
+
+                    <p>
+                        Explore the app's playful interface and
+                        discover its collection of puzzle games
+                        designed for children and families.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
